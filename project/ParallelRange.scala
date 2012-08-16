@@ -213,7 +213,7 @@ object ParallelRangeFlatMap extends scala.testing.Benchmark {
 	
 	def run = {
 		collection flatMap {
-			x:Int => ParRange(x + 1, x + 2, 1, false)
+			x:Int => Array(x + 1)
 		}
 	}
 }

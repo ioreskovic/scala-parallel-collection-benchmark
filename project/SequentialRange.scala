@@ -168,7 +168,7 @@ object SequentialRangeFlatMap extends scala.testing.Benchmark {
 	
 	def run = {
 		collection flatMap {
-			x:Int => Range(x + 1, x + 2, 1)
+			x:Int => Array(x + 1)
 		}
 	}
 }

@@ -170,7 +170,7 @@ object SequentialHashTrieFlatMap extends scala.testing.Benchmark {
 	
 	def run = {
 		collection flatMap {
-			x:Int => ImmutableHashSet(x + 1)
+			x:Int => Array(x + 1)
 		}
 	}
 }
